@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+.cantainer {
+  background-color: #cfb0ab;
+  width: 100vw;
+  height: auto;
+  overflow: auto;
+  display: flex;
+  justify-content : center;
+}
+
+.navbar {
+  border-bottom: 2px solid black;
+  background: #c96b5c;
+}
+
+.offcanvas {
+  background: #c96b5c;
+}
+
+.offcanvas-header {
+  border-bottom: 2px solid #2c2523;
+}
+
+.nav-link {
+  margin: 10px;
+}
+
+.content {
+  margin-top: 130px;
+  display: flex;
+  justify-content : center;
+  width: 80vw;
+  text-align: center;
+}

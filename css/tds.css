@@ -85,6 +85,10 @@ label:hover {
  color: ghostwhite;
 }
 
+.click {
+  background: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
 .result {
   border: 2px solid #2c2523;
   border-radius: 4px;
@@ -103,8 +107,3 @@ label:hover {
   background: #f3a091;
   color: #2c2523;
 }
-
-/* 
-label>"category" {
-  background: pink;
-} */
