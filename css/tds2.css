@@ -34,16 +34,15 @@
 
 .content {
   margin-top: 130px;
-  display: flex;
-  justify-content : center;
   width: 80vw;
   text-align: center;
 }
 
 .weather {
   border: 1px solid black;
-  width: 80vh;
+  width: 60vw;
   height: 200px;
+  margin: auto;
 }
 
 h3 {
@@ -92,10 +91,15 @@ h3 {
 
 }
 
-/* .imgbox{
-  flex-direction: column;
-} */
-
-img {
-  flex-wrap: wrap;
+.imgbox {
+  margin-top: 30px;
+  width: 80vw;
+  display: flex;
+  justify-content : center;
 }
+
+.imgbox img {
+  margin: 10px;
+  width: 38vw;
+}
+
