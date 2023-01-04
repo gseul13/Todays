@@ -3,7 +3,6 @@ const API_KEY = '608fa91b1d96cc4c6b7fb2d140f51829';
 let name = document.querySelector('#name');
 let icon = document.querySelector('#icon');
 let temp = document.querySelector('#temp');
-let main = document.querySelector('#main');
 let feels_like = document.querySelector('#feels_like');
 let description = document.querySelector('#description');
 let temp_min = document.querySelector('#temp_min');
@@ -16,12 +15,11 @@ function connect(position) {
   const lon = position.coords.longitude;
   const lang = 'kr';
   console.log(`위도:${lat} 경도:${lon}`)
-  const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&lang=${lang}&appid=${API_KEY}&units=metric`;
-  // console.log(URL);
+  const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric&lang=${lang}`;
+  console.log(URL);
   fetch(URL).then((response) => response.json())
   .then((data) => {
-    console.log(data.name); // 지역이름
-    console.log(data.weather[0].main); // 날씨
+              console.log(data.name); // 지역이름
               console.log(data.weather[0].description); // 설명
               console.log(data.weather[0].icon); // 아이콘
               console.log(data.main.temp); // 온도
@@ -32,15 +30,14 @@ function connect(position) {
 
               name.innerHTML = data.name;
               temp.innerHTML = data.main.temp + '℃';
-              main.innerHTML = data.weather[0].main;
-              feels_like.innerHTML = data.main.feels_like;
+              feels_like.innerHTML = data.main.feels_like + '℃';
               description.innerHTML = data.weather[0].description;
               temp_min.innerHTML = data.main.temp_min + '℃';
               temp_max.innerHTML = data.main.temp_max + '℃';
               
               const iconId = data.weather[0].icon;
               const imgUrl = `http://openweathermap.org/img/wn/${iconId}@2x.png`
-              icon.setAttribute('src', 'imgUrl');
+              icon.setAttribute('src', imgUrl);
               
             });
 }

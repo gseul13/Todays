@@ -16,7 +16,7 @@
     <header>
       <nav class="navbar fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index2.html"><i class="fa-solid fa-bowl-food"></i></a>
+          <a class="navbar-brand" href="index2.html"><i class="fa-solid fa-shirt"></i></a>
             <img src="img/뭐입지log.png" width="145px">
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -46,17 +46,30 @@
       <div class="weather">
 
         <h3 id="name"></h3>
-        <span id="icon"></span>
-        <span id="temp"></span>
-        <span id="main"></span>
-        <span id="sub"></span>
-        <span id="feels_like"></span>
-        <span id="description"></span>
-        <span id="temp_min"></span>
-        <span id="temp_max"></span>
-      
-        
+        <div class="grid">
+          <img id="icon"></img>
+          <span id="temp"></span>
+            <span id="description"></span>
+            <span class="fel">
+              체감 <span id="feels_like"></span>
+            </span>
+            <span class="temin">
+              최저기온 <span id="temp_min"></span>
+            </span>
+            <span class="temax">
+              최고기온 <span id="temp_max"></span>
+            </span>
+        </div>
+
       </div>
+      
+      <div class="imgbox">
+
+        <img src="img/기온별옷차림.jpg">
+        <img src="img/온도뭐입지.jpg">
+
+      </div>
+      
 
     <footer>
 

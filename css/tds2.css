@@ -39,3 +39,63 @@
   width: 80vw;
   text-align: center;
 }
+
+.weather {
+  border: 1px solid black;
+  width: 80vh;
+  height: 200px;
+}
+
+h3 {
+  margin: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 2fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+      "b1 b2 b3 b5"
+      "b1 b2 b4 b6";
+  text-align: center;
+  width: 70%;
+  height: 48px;
+  line-height: 48px;
+  font-size: 14px;
+  margin: auto;
+}
+
+#icon {
+  grid-area: b1;
+}
+
+#temp {
+  grid-area: b2;
+  margin: auto;
+  font-size: 25px;
+}
+
+#description {
+  grid-area: b3;
+
+}
+.fel {
+  grid-area: b4;
+
+}
+.temin {
+  grid-area: b5;
+
+}
+.temax {
+  grid-area: b6;
+
+}
+
+/* .imgbox{
+  flex-direction: column;
+} */
+
+img {
+  flex-wrap: wrap;
+}
