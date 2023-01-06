@@ -42,16 +42,15 @@
     </header>
 
     <div class="content">
-      <form>
-
+      <form id="form" method="get">
         <div class="select">
-          <input type="checkbox" name="category" id="ko">
-          <input type="checkbox" name="category" id="ch">
-          <input type="checkbox" name="category" id="jp">
-          <input type="checkbox" name="category" id="wf">
-          <input type="checkbox" name="category" id="as">
-          <input type="checkbox" name="category" id="ff">
-          <input type="checkbox" name="category" id="mm">
+          <input type="checkbox" name="category" id="ko" />
+          <input type="checkbox" name="category" id="ch" />
+          <input type="checkbox" name="category" id="jp" />
+          <input type="checkbox" name="category" id="wf" />
+          <input type="checkbox" name="category" id="as" />
+          <input type="checkbox" name="category" id="ff" />
+          <input type="checkbox" name="category" id="mm" />
           <label class="selbtn" for="ko">한식</label>
           <label class="selbtn" for="ch">중식</label>
           <label class="selbtn" for="jp">일식</label>
@@ -62,35 +61,32 @@
         </div>
 
         <div class="select_2">
-          <input type="radio" name="ingredient" id="all">
-          <input type="radio" name="ingredient" id="meat">
-          <input type="radio" name="ingredient" id="sea">
-          <!-- <input type="radio" name="ingredient" id="veg"> -->
-          <label class="sel2btn" for="all">제외없음</label>
+          <input type="radio" name="ingredient" id="all" checked />
+          <input type="radio" name="ingredient" id="meat" />
+          <input type="radio" name="ingredient" id="sea" />
+          <label class="sel2btn click" for="all">제외없음</label>
           <label class="sel2btn" for="meat">육류 제외</label>
           <label class="sel2btn" for="sea">해물 제외</label>
-          <!-- <label class="sel2btn" for="veg">채소류 제외</label> -->
         </div>
 
         <div class="result">
-
+          <div class="result_food">하</div>
         </div>
 
         <div class="submit">
-          <input type="submit" value="오늘 뭐 먹지?">
+          <input type="submit" value="오늘 뭐 먹지?" />
         </div>
-
       </form>
-
     </div>
 
-    <footer>
-
-    </footer>
-
+    <footer></footer>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
   <script src="js/eatbtn.js"></script>
   <script src="js/eatdb.js"></script>
 </body>
