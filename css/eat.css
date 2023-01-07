@@ -6,10 +6,13 @@
   font-family: 'IBM Plex Sans KR', sans-serif;
 }
 
-.cantainer {
-  background-color: #cfb0ab;
+.web {
+  /* background-color: #cfb0ab; */
+  background-image: url(/img/음식.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100vw;
-  /* height: auto; */
+  height: 100vh;
   overflow: auto;
   display: flex;
   justify-content : center;
@@ -33,12 +36,14 @@
 }
 
 .content {
-  margin-top: 130px;
+  margin-top: 180px;
   display: flex;
   justify-content : center;
-  width: 80vw;
+  width: 70vw;
+  height: 55vh;
+  border-radius: 5px;
   text-align: center;
-  /* background: #be9e98; */
+  background: #f0dfdfb0 ;
 }
 
 .select {
@@ -86,7 +91,7 @@ label:hover {
 }
 
 .click {
-  background: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  background: linear-gradient(to top, #feada6 0%, #f5efef 100%);
 }
 
 .result {
@@ -95,6 +100,17 @@ label:hover {
   width: 65vw;
   height: 250px;
   margin-top: 25px;
+}
+
+.result_food {
+  width: 40vw;
+  /* height: 250px;
+  line-height: 250px; */
+  text-align: center;
+  margin: 93px auto;
+  /* display: inline-block; */
+
+  font-size: 40px;
 }
 
 .submit input {
