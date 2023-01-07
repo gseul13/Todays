@@ -7,7 +7,6 @@
 }
 
 .web {
-  /* background-color: #cfb0ab; */
   background-image: url(../img/음식.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,11 +19,11 @@
 
 .navbar {
   border-bottom: 2px solid black;
-  background: #c96b5c;
+  background: #FFADAD;
 }
 
 .offcanvas {
-  background: #c96b5c;
+  background: #FFADAD;
 }
 
 .offcanvas-header {
@@ -86,8 +85,8 @@ label {
 }
 
 label:hover {
- background-color: #ffb0a2;
- color: ghostwhite;
+ background-color: #FFEFBC;
+ color: #492424;
 }
 
 .click {
@@ -104,13 +103,11 @@ label:hover {
 
 .result_food {
   width: 40vw;
-  /* height: 250px;
-  line-height: 250px; */
   text-align: center;
   margin: 93px auto;
-  /* display: inline-block; */
 
   font-size: 40px;
+  font-weight: 600;
 }
 
 .submit input {
@@ -120,6 +117,6 @@ label:hover {
   margin-bottom: 25px;
   border: 2px solid #2c2523;
   border-radius: 4px;
-  background: #f3a091;
+  background: #ff9393;
   color: #2c2523;
 }

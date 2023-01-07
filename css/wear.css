@@ -7,9 +7,12 @@
 }
 
 .web {
-  background-color: #cfb0ab;
+  /* background : linear-gradient(to top, #E3FDF5 0%, #FFE6FA 100%); */
+  background-image: url(../img/날씨.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100vw;
-  height: auto;
+  height: 100vh;
   overflow: auto;
   display: flex;
   justify-content : center;
@@ -17,11 +20,11 @@
 
 .navbar {
   border-bottom: 2px solid black;
-  background: #c96b5c;
+  background: #71b5dd;
 }
 
 .offcanvas {
-  background: #c96b5c;
+  background: #71b5dd;
 }
 
 .offcanvas-header {
@@ -39,10 +42,13 @@
 }
 
 .weather {
-  border: 1px solid black;
+  border: 2px solid rgb(23, 20, 54);
+  border-radius: 4px;
   width: 60vw;
   height: 200px;
   margin: auto;
+
+  background: #dae3e79f ;
 }
 
 h3 {
