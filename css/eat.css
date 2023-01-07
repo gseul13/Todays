@@ -8,7 +8,7 @@
 
 .web {
   /* background-color: #cfb0ab; */
-  background-image: url(/img/음식.jpg);
+  background-image: url(../img/음식.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
