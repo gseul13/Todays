@@ -85,6 +85,11 @@ const handleSubmit = (e) => {
 
   randomCategoryArr = [];
   randomIngredientArr = "";
+
+  if (foodArr.length == 0) {
+    alert('먹고 싶은 메뉴를 선택해주세요');
+    history.back();
+  }
 };
 
 form.addEventListener("submit", handleSubmit);
