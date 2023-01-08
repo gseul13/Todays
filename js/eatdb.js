@@ -81,15 +81,15 @@ const handleSubmit = (e) => {
 
   console.log(foodArr);
 
-  resultFood.innerText = foodArr[Math.floor(Math.random() * foodArr.length)];
+  if (foodArr.length === 0) {
+    alert("먹고 싶은 메뉴를 선택하세욥!");
+  } else {
+    resultFood.innerText = foodArr[Math.floor(Math.random() * foodArr.length)];
+  }
 
   randomCategoryArr = [];
   randomIngredientArr = "";
 
-  if (foodArr.length == 0) {
-    alert('먹고 싶은 메뉴를 선택해주세요');
-    resultFood.innerHTML = null;
-  }
 };
 
 form.addEventListener("submit", handleSubmit);
