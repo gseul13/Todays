@@ -88,7 +88,7 @@ const handleSubmit = (e) => {
 
   if (foodArr.length == 0) {
     alert('먹고 싶은 메뉴를 선택해주세요');
-    history.back();
+    resultFood.innerHTML = null;
   }
 };
 
